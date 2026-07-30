@@ -4,7 +4,7 @@ title: Termeni și Condiții — InstalCalc Pro
 
 # Termeni și Condiții de Utilizare - InstalCalc Pro
 
-**Data ultimei actualizări:** 18 iunie 2026
+**Data ultimei actualizări:** 19 iulie 2026
 
 ## 1. Operator
 
@@ -18,7 +18,7 @@ Dacă nu sunteți de acord cu ei, nu utilizați aplicația.
 
 ## 3. Descrierea serviciului
 
-InstalCalc Pro oferă instrumente software pentru calcule HVAC, instalații sanitare, ventilație, gaze naturale, solar termic, fotovoltaic, export PDF și gestionare de proiecte tehnice.
+InstalCalc Pro oferă instrumente software pentru calcule HVAC, instalații sanitare, ventilație, gaze naturale, solar termic, fotovoltaic, export PDF, gestionare de proiecte tehnice, emitere de oferte comerciale către clienți și evidența lucrărilor de mentenanță.
 
 ## 4. Licență
 
@@ -49,6 +49,20 @@ Rezultatele sunt informative și orientative. Ele nu înlocuiesc:
 Utilizatorul este responsabil să verifice dacă rezultatele sunt adecvate normativului, amplasamentului, echipamentelor și scopului concret al proiectului.
 
 Mențiunile la standarde, normative sau documente tehnice sunt referințe bibliografice și repere de proiectare. Aplicația nu furnizează copii ale acestor documente, nu reproduce texte, tabele sau anexe protejate și nu pretinde certificarea oficială a conformității cu un standard anume.
+
+## 6.1. Modulele Oferte Clienți și Mentenanță
+
+Documentele generate prin modulul Oferte Clienți sunt **oferte comerciale** — propuneri precontractuale supuse acceptării de către client. Rapoartele de service generate prin modulul Mentenanță sunt documente de evidență a lucrărilor efectuate.
+
+Ele **nu înlocuiesc**:
+
+- contractul de prestări servicii încheiat separat
+- facturile fiscale, care se emit conform Codului fiscal și se transmit prin RO e-Factura
+- proiectul tehnic și verificările obligatorii pentru execuție
+
+Răspunderea pentru corectitudinea datelor introduse (prețuri, mențiuni TVA, CUI, condiții comerciale, garanții) și pentru respectarea legislației aplicabile (OUG 34/2014, OUG 140/2021, OUG 120/2021, Legea 31/1990, GDPR) revine **exclusiv emitentului documentului**. Aplicația aplică mențiuni legale standard, dar nu poate verifica dacă acestea sunt complete sau adecvate pentru fiecare caz concret.
+
+Semnătura digitală desenată pe canvas este o **semnătură electronică simplă** (eIDAS) — utilă pentru exprimarea acceptării, dar nu echivalentă cu o semnătură electronică calificată. Pentru documente cu valoare juridică superioară, utilizați semnătura electronică calificată emisă de un prestator înscris în EU Trusted List.
 
 ## 7. Limitarea răspunderii
 

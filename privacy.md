@@ -4,7 +4,7 @@ title: Politica de Confidențialitate — InstalCalc Pro
 
 # Politica de Confidențialitate - InstalCalc Pro
 
-**Data ultimei actualizări:** 18 iunie 2026
+**Data ultimei actualizări:** 30 iulie 2026
 
 ## 1. Operatorul aplicației
 
@@ -12,9 +12,9 @@ Această aplicație este operată de persoana sau entitatea indicată în pagina
 
 ## 2. Despre aplicație
 
-InstalCalc Pro este o aplicație tehnică pentru calcule HVAC, instalații sanitare, ventilație, gaze naturale, instalații electrice rezidențiale, solar termic, fotovoltaic și gestionare de proiecte tehnice.
+InstalCalc Pro este o aplicație tehnică pentru calcule HVAC, instalații sanitare, ventilație, gaze naturale, instalații electrice rezidențiale, solar termic, fotovoltaic, gestionare de proiecte tehnice, emiterea de oferte comerciale către clienți și evidența lucrărilor de mentenanță.
 
-Aplicația permite efectuarea de calcule, salvarea proiectelor și exportul de rapoarte PDF, în principal local pe dispozitivul utilizatorului.
+Aplicația permite efectuarea de calcule, salvarea proiectelor, generarea de oferte PDF și exportul de rapoarte, în principal local pe dispozitivul utilizatorului.
 
 ## 3. Ce date pot fi procesate
 
@@ -24,6 +24,8 @@ Aplicația permite efectuarea de calcule, salvarea proiectelor și exportul de r
 - dimensiuni, suprafețe, volume și alți parametri tehnici ai clădirii sau instalației
 - rezultate de calcul, snapshot-uri și istoric de calcule
 - materiale, biblioteci, setări și preferințe salvate de utilizator
+- profilul instalatorului (firmă, CUI, IBAN, reprezentant legal, capital social)
+- în modulele Oferte Clienți și Mentenanță: datele clienților (nume, telefon, email, CNP/CUI, adresă), conținutul ofertelor și devizelor, semnăturile desenate pe ecran și PDF-urile semnate atașate
 - informații tehnice privind produsele și starea abonamentului furnizate prin serviciile Apple
 
 ## 3.1. Date personale introduse opțional în proiecte
@@ -33,6 +35,16 @@ Unele câmpuri opționale ale proiectelor (ex. **Beneficiar** la tabloul electri
 - aceste date sunt stocate strict local pe dispozitivul utilizatorului
 - nu sunt transmise dezvoltatorului sau altor servicii externe
 - pot fi șterse oricând prin ștergerea proiectului din aplicație
+
+## 3.2. Date despre clienții utilizatorului (modulele Oferte și Mentenanță)
+
+Când utilizatorul introduce date despre clienții săi (persoane fizice sau juridice) în modulul Oferte Clienți sau în modulul Mentenanță, utilizatorul devine **operator de date personale** în sensul Regulamentului UE 2016/679 (GDPR). Utilizatorul are responsabilitatea de a-și informa clienții cu privire la prelucrarea datelor lor și de a aplica prevederile legale aplicabile.
+
+- aceste date sunt stocate strict local pe dispozitivul utilizatorului
+- nu sunt transmise dezvoltatorului sau altor servicii externe
+- semnăturile desenate pe ecran (tehnician și client) sunt stocate local și apar doar în PDF-urile generate
+- PDF-urile semnate sunt salvate cu verificare de integritate SHA-256
+- ofertele acceptate trebuie păstrate 5 ani conform art. 25 din Legea 82/1991; aplicația avertizează utilizatorul când încearcă să șteargă o ofertă acceptată înainte de expirarea termenului
 
 ## 4. Unde sunt stocate datele
 
@@ -65,13 +77,13 @@ Aplicația poate folosi servicii Apple pentru achiziții și poate face cereri p
 
 ## 7. Permisiuni
 
-Aplicația nu solicită în mod obișnuit acces la:
+Aplicația solicită acces la anumite funcții ale dispozitivului **doar în contextul utilizării funcției respective** și numai după acordul utilizatorului prin dialogul standard iOS:
 
-- locație
-- cameră
-- microfon
-- contacte
-- fotografii
+- **Cameră** — pentru scanarea 3D a încăperilor cu LiDAR, măsurarea umbririi panourilor fotovoltaice, ruleta AR (măsurare distanțe) și scanarea documentelor (oferte externe). Imaginile procesate de cameră (inclusiv recunoașterea textului la scanarea ofertelor) sunt prelucrate **local pe dispozitiv** și nu sunt transmise dezvoltatorului.
+- **Adăugare în galeria foto** — pentru a salva, la cererea utilizatorului, pozele cu măsurătorile AR în biblioteca foto proprie.
+- **Notificări** — pentru remindere locale privind valabilitatea și urmărirea ofertelor și scadențele lucrărilor de mentenanță. Reminderele sunt programate **local pe dispozitiv** prin mecanismul standard iOS; conținutul lor nu este transmis dezvoltatorului sau altor servicii externe, iar permisiunea poate fi revocată oricând din Setările sistemului.
+
+Aplicația **nu** solicită acces la locație, microfon sau la agenda de contacte. Datele clienților folosite în modulele Oferte și Mentenanță sunt introduse manual de utilizator, nu preluate din agenda telefonului.
 
 Dacă în viitor vor exista funcții care necesită permisiuni suplimentare, acestea vor fi solicitate de sistem doar în contextul utilizării respectivei funcții.
 
