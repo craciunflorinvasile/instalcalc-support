@@ -101,9 +101,12 @@ main {
 }
 
 .hero .logo {
-    font-size: 64px;
-    line-height: 1;
-    margin-bottom: 8px;
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 0 auto 8px;
+    border-radius: 26px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
 }
 
 .hero h1 {
