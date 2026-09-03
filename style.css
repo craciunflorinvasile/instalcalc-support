@@ -143,6 +143,22 @@ main {
     cursor: default;
 }
 
+/* Prefilled email button */
+.mail-btn {
+    align-items: center;
+    gap: 8px;
+    margin-top: 14px;
+    padding: 12px 22px;
+    background: linear-gradient(90deg, var(--brand-blue), var(--brand-red));
+    color: #ffffff;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+a.mail-btn[data-lang].active { display: inline-flex; }
+
 /* Feature grid */
 .features {
     display: grid;
