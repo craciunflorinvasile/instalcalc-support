@@ -13,10 +13,20 @@
 <header class="site-header">
     <a class="wordmark" href="index.html">InstalCalc</a>
     <nav>
-        <a href="#suport">Suport</a>
-        <a href="privacy.html">Confidențialitate</a>
-        <a href="terms.html">Termeni</a>
-        <button class="lang-toggle" id="langToggle" type="button">EN</button>
+        <a href="#suport" data-lang="ro">Suport</a>
+        <a href="#suport" data-lang="en">Support</a>
+        <a href="#suport" data-lang="de">Support</a>
+        <a href="privacy.html" data-lang="ro">Confidențialitate</a>
+        <a href="privacy.html" data-lang="en">Privacy</a>
+        <a href="privacy.html" data-lang="de">Datenschutz</a>
+        <a href="terms.html" data-lang="ro">Termeni</a>
+        <a href="terms.html" data-lang="en">Terms</a>
+        <a href="terms.html" data-lang="de">AGB</a>
+        <div class="lang-switch">
+            <button class="lang-toggle" data-set-lang="ro" type="button">RO</button>
+            <button class="lang-toggle" data-set-lang="en" type="button">EN</button>
+            <button class="lang-toggle" data-set-lang="de" type="button">DE</button>
+        </div>
     </nav>
 </header>
 
@@ -26,9 +36,11 @@
         <h1 class="wordmark">InstalCalc</h1>
         <p class="tagline" data-lang="ro">Instrument tehnic pentru ingineri HVAC, instalatori și proiectanți: calcule termice, sanitare, ventilație, gaze, electrice, solar și fotovoltaic — cu rapoarte PDF, în principal offline.</p>
         <p class="tagline" data-lang="en">Technical toolkit for HVAC engineers, installers, and designers: thermal, plumbing, ventilation, gas, electrical, solar, and photovoltaic calculations — with PDF reports, mostly offline.</p>
+        <p class="tagline" data-lang="de">Technisches Werkzeug für HVAC-Ingenieure, Installateure und Planer: Berechnungen für Heizung, Sanitär, Lüftung, Gas, Elektro, Solar und Photovoltaik — mit PDF-Berichten, überwiegend offline.</p>
         <div>
             <span class="store-badge disabled" data-lang="ro">În curând pe App Store</span>
             <span class="store-badge disabled" data-lang="en">Coming soon to the App Store</span>
+            <span class="store-badge disabled" data-lang="de">Bald im App Store</span>
         </div>
     </section>
 
@@ -37,98 +49,128 @@
             <div class="icon">🔥</div>
             <h3 data-lang="ro">Calcule termice</h3>
             <h3 data-lang="en">Thermal calculations</h3>
+            <h3 data-lang="de">Wärmeberechnungen</h3>
             <p data-lang="ro">Necesar de căldură, U-value, radiatoare, încălzire în pardoseală, centrale și pompe de căldură.</p>
             <p data-lang="en">Heat load, U-value, radiators, underfloor heating, boilers, and heat pumps.</p>
+            <p data-lang="de">Heizlast, U-Wert, Heizkörper, Fußbodenheizung, Heizkessel und Wärmepumpen.</p>
         </div>
         <div class="feature">
             <div class="icon">💧</div>
             <h3 data-lang="ro">Instalații sanitare</h3>
             <h3 data-lang="en">Plumbing</h3>
+            <h3 data-lang="de">Sanitärinstallationen</h3>
             <p data-lang="ro">Debite, dimensionare țevi, pierderi de presiune și boiler ACM.</p>
             <p data-lang="en">Flow rates, pipe sizing, pressure losses, and DHW boilers.</p>
+            <p data-lang="de">Durchflussmengen, Rohrdimensionierung, Druckverluste und Warmwasserspeicher.</p>
         </div>
         <div class="feature">
             <div class="icon">🌬️</div>
             <h3 data-lang="ro">Ventilație & climatizare</h3>
             <h3 data-lang="en">Ventilation & AC</h3>
+            <h3 data-lang="de">Lüftung & Klimatisierung</h3>
             <p data-lang="ro">Aer proaspăt, psihometrie, sarcină de răcire, canale și recuperare de căldură.</p>
             <p data-lang="en">Fresh air, psychrometrics, cooling load, ducts, and heat recovery.</p>
+            <p data-lang="de">Frischluft, Psychrometrie, Kühllast, Kanäle und Wärmerückgewinnung.</p>
         </div>
         <div class="feature">
             <div class="icon">⚡</div>
             <h3 data-lang="ro">Electrice & solar</h3>
             <h3 data-lang="en">Electrical & solar</h3>
+            <h3 data-lang="de">Elektro & Solar</h3>
             <p data-lang="ro">Tablouri rezidențiale, secțiuni cablu, fotovoltaic, solar termic și rețele de gaze.</p>
             <p data-lang="en">Residential boards, cable sizing, photovoltaics, solar thermal, and gas networks.</p>
+            <p data-lang="de">Wohnungs-Elektroverteilungen, Kabelquerschnitte, Photovoltaik, Solarthermie und Gasnetze.</p>
         </div>
         <div class="feature">
             <div class="icon">📄</div>
             <h3 data-lang="ro">Proiecte & oferte</h3>
             <h3 data-lang="en">Projects & offers</h3>
+            <h3 data-lang="de">Projekte & Angebote</h3>
             <p data-lang="ro">Gestionare proiecte, export PDF, oferte comerciale și evidența mentenanței.</p>
             <p data-lang="en">Project management, PDF export, commercial offers, and maintenance tracking.</p>
+            <p data-lang="de">Projektverwaltung, PDF-Export, kommerzielle Angebote und Wartungsverfolgung.</p>
         </div>
         <div class="feature">
             <div class="icon">🔒</div>
             <h3 data-lang="ro">Datele tale rămân la tine</h3>
             <h3 data-lang="en">Your data stays with you</h3>
+            <h3 data-lang="de">Ihre Daten bleiben bei Ihnen</h3>
             <p data-lang="ro">Datele sunt stocate în principal local pe dispozitiv, fără tracking publicitar.</p>
             <p data-lang="en">Data is stored primarily on your device, with no advertising tracking.</p>
+            <p data-lang="de">Die Daten werden hauptsächlich lokal auf Ihrem Gerät gespeichert, ohne Werbe-Tracking.</p>
         </div>
     </section>
 
     <section class="card" id="suport">
         <h2 data-lang="ro">Suport</h2>
         <h2 data-lang="en">Support</h2>
+        <h2 data-lang="de">Support</h2>
         <p data-lang="ro">Pentru întrebări, probleme tehnice sau sugestii, ne poți contacta la <a href="mailto:support@instalcalc.ro">support@instalcalc.ro</a>. Te rugăm să incluzi versiunea aplicației și modelul dispozitivului pentru un răspuns cât mai rapid.</p>
         <p data-lang="en">For questions, technical issues, or suggestions, contact us at <a href="mailto:support@instalcalc.ro">support@instalcalc.ro</a>. Please include the app version and your device model so we can respond faster.</p>
+        <p data-lang="de">Bei Fragen, technischen Problemen oder Anregungen erreichen Sie uns unter <a href="mailto:support@instalcalc.ro">support@instalcalc.ro</a>. Bitte geben Sie die App-Version und Ihr Gerätemodell an, damit wir Ihnen schneller helfen können.</p>
         <a class="mail-btn" data-lang="ro" href="mailto:support@instalcalc.ro?subject=InstalCalc%20%E2%80%93%20Suport&body=Scrie%20mesajul%20t%C4%83u%20mai%20jos.%0A%0A%E2%80%94%0AVersiunea%20aplica%C8%9Biei%3A%20%0ADispozitiv%20%28ex.%20iPhone%2015%29%3A%20%0ASistem%20%28ex.%20iOS%2018%29%3A%20">✉️ Scrie-ne pe email</a>
         <a class="mail-btn" data-lang="en" href="mailto:support@instalcalc.ro?subject=InstalCalc%20%E2%80%93%20Support&body=Write%20your%20message%20below.%0A%0A%E2%80%94%0AApp%20version%3A%20%0ADevice%20%28e.g.%20iPhone%2015%29%3A%20%0ASystem%20%28e.g.%20iOS%2018%29%3A%20">✉️ Email Us</a>
+        <a class="mail-btn" data-lang="de" href="mailto:support@instalcalc.ro?subject=InstalCalc%20%E2%80%93%20Support&body=Schreiben%20Sie%20Ihre%20Nachricht%20unten.%0A%0A%E2%80%94%0AApp-Version%3A%20%0AGer%C3%A4t%20%28z.%20B.%20iPhone%2015%29%3A%20%0ASystem%20%28z.%20B.%20iOS%2018%29%3A%20">✉️ Schreiben Sie uns</a>
     </section>
 
     <section class="card">
         <h2 data-lang="ro">Abonamente</h2>
         <h2 data-lang="en">Subscriptions</h2>
+        <h2 data-lang="de">Abonnements</h2>
         <p data-lang="ro">Funcțiile premium sunt disponibile prin abonament, procesat de Apple App Store. Administrarea și anularea abonamentelor se fac din contul Apple (Setări → [numele tău] → Abonamente). Rambursările sunt guvernate de politicile Apple.</p>
         <p data-lang="en">Premium features are available via subscription, processed by the Apple App Store. Manage or cancel subscriptions in your Apple account (Settings → [your name] → Subscriptions). Refunds are governed by Apple's policies.</p>
+        <p data-lang="de">Premium-Funktionen sind über ein Abonnement verfügbar, das über den Apple App Store abgewickelt wird. Die Verwaltung und Kündigung von Abonnements erfolgt über Ihr Apple-Konto (Einstellungen → [Ihr Name] → Abonnements). Rückerstattungen unterliegen den Richtlinien von Apple.</p>
     </section>
 
     <section class="card">
         <h2 data-lang="ro">Documente</h2>
         <h2 data-lang="en">Documents</h2>
-        <p data-lang="ro"><a href="privacy.html">Politica de Confidențialitate</a> · <a href="terms.html">Termeni și Condiții de Utilizare</a> (română / deutsch)</p>
-        <p data-lang="en"><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms and Conditions</a> (Romanian / German)</p>
+        <h2 data-lang="de">Dokumente</h2>
+        <p data-lang="ro"><a href="privacy.html">Politica de Confidențialitate</a> · <a href="terms.html">Termeni și Condiții de Utilizare</a> (RO / EN / DE)</p>
+        <p data-lang="en"><a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms and Conditions</a> (RO / EN / DE)</p>
+        <p data-lang="de"><a href="privacy.html">Datenschutzerklärung</a> · <a href="terms.html">Allgemeine Geschäftsbedingungen</a> (RO / EN / DE)</p>
     </section>
 </main>
 
 <footer class="site-footer">
     <div class="links">
-        <a href="#suport">Suport</a>
-        <a href="privacy.html">Confidențialitate</a>
-        <a href="terms.html">Termeni</a>
+        <a href="#suport" data-lang="ro">Suport</a>
+        <a href="#suport" data-lang="en">Support</a>
+        <a href="#suport" data-lang="de">Support</a>
+        <a href="privacy.html" data-lang="ro">Confidențialitate</a>
+        <a href="privacy.html" data-lang="en">Privacy</a>
+        <a href="privacy.html" data-lang="de">Datenschutz</a>
+        <a href="terms.html" data-lang="ro">Termeni</a>
+        <a href="terms.html" data-lang="en">Terms</a>
+        <a href="terms.html" data-lang="de">AGB</a>
         <a href="mailto:support@instalcalc.ro">support@instalcalc.ro</a>
     </div>
     <p class="operator-note" data-lang="ro">Operator: Florin-Vasile Crăciun, Bahnhofstraße 1, 35649 Bischoffen, Germania. Persoană fizică autorizată (Einzelunternehmen/Nebengewerbe). Contact: support@instalcalc.ro</p>
     <p class="operator-note" data-lang="en">Operator: Florin-Vasile Crăciun, Bahnhofstraße 1, 35649 Bischoffen, Germany. Sole proprietor (Einzelunternehmen/Nebengewerbe). Contact: support@instalcalc.ro</p>
-    <div>© 2025-2026 InstalCalc. Toate drepturile rezervate.</div>
+    <p class="operator-note" data-lang="de">Betreiber: Florin-Vasile Crăciun, Bahnhofstraße 1, 35649 Bischoffen, Deutschland. Einzelunternehmen/Nebengewerbe. Kontakt: support@instalcalc.ro</p>
+    <div data-lang="ro">© 2025-2026 InstalCalc. Toate drepturile rezervate.</div>
+    <div data-lang="en">© 2025-2026 InstalCalc. All rights reserved.</div>
+    <div data-lang="de">© 2025-2026 InstalCalc. Alle Rechte vorbehalten.</div>
 </footer>
 
 <script>
 (function () {
-    var toggle = document.getElementById("langToggle");
+    var buttons = document.querySelectorAll(".lang-toggle[data-set-lang]");
     function apply(lang) {
         document.querySelectorAll("[data-lang]").forEach(function (el) {
             el.classList.toggle("active", el.getAttribute("data-lang") === lang);
         });
+        buttons.forEach(function (btn) {
+            btn.classList.toggle("active", btn.getAttribute("data-set-lang") === lang);
+        });
         document.documentElement.lang = lang;
-        toggle.textContent = lang === "ro" ? "EN" : "RO";
         try { localStorage.setItem("instalcalc-lang", lang); } catch (e) {}
     }
     var saved = "ro";
     try { saved = localStorage.getItem("instalcalc-lang") || "ro"; } catch (e) {}
     apply(saved);
-    toggle.addEventListener("click", function () {
-        apply(document.documentElement.lang === "ro" ? "en" : "ro");
+    buttons.forEach(function (btn) {
+        btn.addEventListener("click", function () { apply(btn.getAttribute("data-set-lang")); });
     });
 })();
 </script>

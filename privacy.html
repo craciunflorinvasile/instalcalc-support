@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Politica de Confidențialitate / Datenschutzerklärung — InstalCalc</title>
-<meta name="description" content="Politica de confidențialitate pentru aplicația InstalCalc. / Datenschutzerklärung für die App InstalCalc.">
+<title>Politica de Confidențialitate / Privacy Policy / Datenschutzerklärung — InstalCalc</title>
+<meta name="description" content="Politica de confidențialitate pentru aplicația InstalCalc. / Privacy Policy for the InstalCalc app. / Datenschutzerklärung für die App InstalCalc.">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
 <link rel="stylesheet" href="style.css">
@@ -14,12 +14,19 @@
     <a class="wordmark" href="index.html">InstalCalc</a>
     <nav>
         <a href="index.html" data-lang="ro">Acasă</a>
+        <a href="index.html" data-lang="en">Home</a>
         <a href="index.html" data-lang="de">Start</a>
         <a href="privacy.html" data-lang="ro">Confidențialitate</a>
+        <a href="privacy.html" data-lang="en">Privacy</a>
         <a href="privacy.html" data-lang="de">Datenschutz</a>
         <a href="terms.html" data-lang="ro">Termeni</a>
+        <a href="terms.html" data-lang="en">Terms</a>
         <a href="terms.html" data-lang="de">AGB</a>
-        <button class="lang-toggle" id="langToggle" type="button">DE</button>
+        <div class="lang-switch">
+            <button class="lang-toggle" data-set-lang="ro" type="button">RO</button>
+            <button class="lang-toggle" data-set-lang="en" type="button">EN</button>
+            <button class="lang-toggle" data-set-lang="de" type="button">DE</button>
+        </div>
     </nav>
 </header>
 <main>
@@ -141,6 +148,125 @@
 <hr>
 <p><strong>Notă:</strong> Aplicația este un instrument tehnic de suport pentru calcule, estimări preliminare și gestionare de proiecte. Utilizatorul este responsabil pentru datele pe care le introduce și pentru modul în care utilizează sau distribuie rezultatele generate.</p>
 <a class="back-link" href="index.html">← Înapoi la pagina principală</a>
+</div>
+
+<div data-lang="en">
+<h1>Privacy Policy - InstalCalc</h1>
+<p><strong>Last updated:</strong> August 31, 2026</p>
+<h2>1. App operator</h2>
+<p>This app is operated by:</p>
+<p><strong>Florin-Vasile Crăciun</strong><br>Bahnhofstraße 1<br>35649 Bischoffen, Germany<br>Email: support@instalcalc.ro<br>Web: instalcalc.ro</p>
+<p>The operator is a natural person authorized to carry out an independent activity (Einzelunternehmen/Nebengewerbe), not a separate legal entity. The VAT identification number (USt-IdNr.) will be added after the business is registered.</p>
+<h2>2. About the app</h2>
+<p>InstalCalc is a technical app for HVAC calculations, plumbing, ventilation, natural gas, residential electrical installations, solar thermal, photovoltaic, technical project management, issuing commercial offers to clients, and maintenance record keeping.</p>
+<p>The app lets you perform calculations, save projects, generate PDF offers, and export reports, primarily locally on your device.</p>
+<h2>3. What data may be processed</h2>
+<p>Depending on how you use the app, it may process:</p>
+<ul>
+<li>project names, locations, and descriptions entered by the user</li>
+<li>dimensions, areas, volumes, and other technical parameters of the building or installation</li>
+<li>calculation results, snapshots, and calculation history</li>
+<li>materials, libraries, settings, and preferences saved by the user</li>
+<li>the installer profile (company, tax ID, IBAN, legal representative, share capital)</li>
+<li>in the Client Offers and Maintenance modules: client data (name, phone, email, tax/personal ID, address), the content of offers and quotes, signatures drawn on screen, and attached signed PDFs</li>
+<li>technical information about products and subscription status provided through Apple services</li>
+</ul>
+<h2>3.1. Personal data entered optionally in projects</h2>
+<p>Some optional project fields (e.g. <strong>Beneficiary</strong> in the residential electrical panel) may contain personal data if the user chooses to fill them in. If the user enters such data, they become a <strong>data controller</strong> within the meaning of Regulation (EU) 2016/679 (GDPR) for that data.</p>
+<ul>
+<li>this data is stored strictly locally on the user's device</li>
+<li>it is not transmitted to the developer or other external services</li>
+<li>it can be deleted at any time by deleting the project from the app</li>
+</ul>
+<h2>3.2. Data about the user's clients (Offers and Maintenance modules)</h2>
+<p>When the user enters data about their clients (individuals or legal entities) in the Client Offers module or the Maintenance module, the user becomes a <strong>data controller</strong> within the meaning of Regulation (EU) 2016/679 (GDPR). The user is responsible for informing their clients about the processing of their data and for applying the applicable legal provisions.</p>
+<ul>
+<li>this data is stored strictly locally on the user's device</li>
+<li>it is not transmitted to the developer or other external services</li>
+<li>signatures drawn on screen (technician and client) are stored locally and appear only in the generated PDFs</li>
+<li>signed PDFs are saved with SHA-256 integrity verification</li>
+<li>accepted offers must be kept for 5 years under Art. 25 of Romanian Law 82/1991 (accounting); the app warns the user when trying to delete an accepted offer before that period expires</li>
+</ul>
+<h2>4. Where the data is stored</h2>
+<ul>
+<li>Data entered by the user is stored primarily locally on the device.</li>
+<li>The app uses standard iOS/iPadOS mechanisms, including <code>UserDefaults</code>, for locally saved settings, projects, and results.</li>
+<li>PDF exports and generated files are created locally and shared only at the user's initiative.</li>
+<li>When the user chooses to send an offer or document through an external channel (e.g. WhatsApp, SMS, email, or the iOS share sheet), that content — which may include client data such as phone number and offer text — is transmitted through the service chosen by the user and is subject to that service's policies (e.g. Meta for WhatsApp). The app does not send this data automatically; the transfer happens only through the user's explicit action.</li>
+<li>If the user chooses the iCloud Drive backup feature, the backup file (which may contain all projects, attached plans, and client data) is saved in the user's iCloud account, through Apple's infrastructure and in accordance with Apple's policies. The backup can alternatively be saved locally on the device.</li>
+<li>To the extent Apple provides information about products, transactions, or subscriptions, this is processed through Apple's infrastructure, in accordance with Apple's policies.</li>
+<li>Some solar features may query PVGIS/JRC or other external climate data services using limited technical parameters, such as the county/approximate coordinates and panel angle, only for the calculation requested by the user.</li>
+<li>The PVGIS/JRC service only receives the parameters necessary for the technical request (e.g. approximate latitude/longitude, tilt/orientation, and calculation options), not the project name, the beneficiary's name, plans, photos, or PDF reports.</li>
+</ul>
+<h2>5. In-app purchases and subscriptions</h2>
+<p>The app may offer access to additional features through subscriptions or other in-app purchases available through the Apple App Store.</p>
+<ul>
+<li>Payments, renewals, and subscription management are processed by Apple.</li>
+<li>The developer does not receive or store the user's complete payment data.</li>
+<li>The app may check available products, transactions, and subscription status to activate Pro features.</li>
+</ul>
+<h2>6. What the app does NOT do</h2>
+<p>In the current version, the app does not use:</p>
+<ul>
+<li>its own user accounts</li>
+<li>its own commercial profiling network</li>
+<li>advertising tracking</li>
+<li>third-party analytics for behavioral advertising</li>
+<li>its own cloud for syncing user projects</li>
+</ul>
+<p>The app may use Apple services for purchases and may make targeted requests to external climate services when the user explicitly requests a calculation that needs external data.</p>
+<h2>7. Permissions</h2>
+<p>The app requests access to certain device features <strong>only in the context of using that feature</strong>, and only after the user's consent through the standard iOS dialog:</p>
+<ul>
+<li><strong>Camera</strong> — for 3D LiDAR room scanning, measuring shading on photovoltaic panels, the AR tape measure (distance measurement), scanning documents (external offers), and scanning equipment serial numbers in service sheets. Images processed by the camera (including text recognition when scanning offers and serial numbers) are processed <strong>locally on the device</strong> and are not transmitted to the developer.</li>
+<li><strong>Location (while using the app)</strong> — used <strong>only for the compass</strong>: north orientation during 3D room scanning and when measuring the orientation/shading of photovoltaic panels. Your location is <strong>not stored and not shared</strong> with the developer, and the permission can be revoked at any time from the system Settings. (The approximate coordinates used for solar climate data come from the county/location entered by the user, not from this permission — see sections 4 and 12.)</li>
+<li><strong>Add to Photo Library</strong> — to save, at the user's request, AR measurement photos to their own photo library.</li>
+<li><strong>Notifications</strong> — for local reminders about offer validity and follow-up, and maintenance work due dates. Reminders are scheduled <strong>locally on the device</strong> through the standard iOS mechanism; their content is not transmitted to the developer or other external services, and the permission can be revoked at any time from the system Settings.</li>
+</ul>
+<p>The app does <strong>not</strong> request access to the microphone or the contacts list. Client data used in the Offers and Maintenance modules is entered manually by the user, not taken from the phone's address book.</p>
+<p>Should future features require additional permissions, these will be requested by the system only in the context of using that specific feature.</p>
+<h2>8. Purpose of processing</h2>
+<p>Data is processed exclusively for:</p>
+<ul>
+<li>performing the calculations requested by the user</li>
+<li>saving projects, configurations, and results</li>
+<li>keeping app preferences</li>
+<li>generating exports and reports</li>
+<li>activating and verifying Pro features through Apple</li>
+<li>obtaining external climate data needed for certain solar calculations, when the user requests that feature</li>
+<li>improving the local usage experience of the app</li>
+</ul>
+<h2>9. Basis and nature of use</h2>
+<p>The app is a software tool used at the user's initiative. The user decides what data to enter, which projects to save, and which exports to generate or distribute.</p>
+<h2>10. Security</h2>
+<ul>
+<li>Data is stored primarily locally on the user's device.</li>
+<li>Protection of the device, backups, and distributed exports also remains the user's responsibility.</li>
+<li>Deleting the app may result in the loss of local data that was not exported or saved separately.</li>
+</ul>
+<h2>11. User rights</h2>
+<p>Depending on the applicable law, the user may request:</p>
+<ul>
+<li>access to personal data</li>
+<li>rectification</li>
+<li>erasure</li>
+<li>restriction of processing</li>
+<li>objection</li>
+<li>additional information about the processing</li>
+</ul>
+<p>For data protection requests, use the contact details and support links published on the app's page.</p>
+<h2>12. Transfers to third parties</h2>
+<p>We do not sell personal data and do not transfer user data to third parties for our own commercial purposes.</p>
+<p>For in-app purchases, certain technical and commercial data may be processed by Apple in accordance with Apple's policies and terms.</p>
+<p>For solar features that use PVGIS/JRC, the technical request is sent to the JRC/PVGIS infrastructure to obtain the requested climate data. This data is used only for the calculation initiated by the user and not for advertising tracking.</p>
+<p>When the user chooses to share documents through external channels (WhatsApp, SMS, email, iOS share sheet) or to save a backup in iCloud Drive, the data is transmitted through those services at the user's initiative and is subject to those providers' policies. These transfers are not initiated automatically by the app.</p>
+<h2>13. Changes</h2>
+<p>This policy may be updated periodically. The current version must also be published at the external URL indicated on the app's page and in official support materials.</p>
+<h2>14. Contact</h2>
+<p>For questions about privacy, use the contact details and support links published on the app's page.</p>
+<hr>
+<p><strong>Note:</strong> The app is a technical support tool for calculations, preliminary estimates, and project management. The user is responsible for the data they enter and for how they use or distribute the generated results.</p>
+<a class="back-link" href="index.html">← Back to home page</a>
 </div>
 
 <div data-lang="de">
@@ -266,33 +392,40 @@
 <footer class="site-footer">
     <div class="links">
         <a href="index.html" data-lang="ro">Acasă</a>
+        <a href="index.html" data-lang="en">Home</a>
         <a href="index.html" data-lang="de">Start</a>
         <a href="privacy.html" data-lang="ro">Confidențialitate</a>
+        <a href="privacy.html" data-lang="en">Privacy</a>
         <a href="privacy.html" data-lang="de">Datenschutz</a>
         <a href="terms.html" data-lang="ro">Termeni</a>
+        <a href="terms.html" data-lang="en">Terms</a>
         <a href="terms.html" data-lang="de">AGB</a>
         <a href="mailto:support@instalcalc.ro" data-lang="ro">Contact</a>
+        <a href="mailto:support@instalcalc.ro" data-lang="en">Contact</a>
         <a href="mailto:support@instalcalc.ro" data-lang="de">Kontakt</a>
     </div>
     <div data-lang="ro">© 2025-2026 InstalCalc. Toate drepturile rezervate.</div>
+    <div data-lang="en">© 2025-2026 InstalCalc. All rights reserved.</div>
     <div data-lang="de">© 2025-2026 InstalCalc. Alle Rechte vorbehalten.</div>
 </footer>
 <script>
 (function () {
-    var toggle = document.getElementById("langToggle");
+    var buttons = document.querySelectorAll(".lang-toggle[data-set-lang]");
     function apply(lang) {
         document.querySelectorAll("[data-lang]").forEach(function (el) {
             el.classList.toggle("active", el.getAttribute("data-lang") === lang);
         });
+        buttons.forEach(function (btn) {
+            btn.classList.toggle("active", btn.getAttribute("data-set-lang") === lang);
+        });
         document.documentElement.lang = lang;
-        toggle.textContent = lang === "de" ? "RO" : "DE";
-        try { localStorage.setItem("instalcalc-legal-lang", lang); } catch (e) {}
+        try { localStorage.setItem("instalcalc-lang", lang); } catch (e) {}
     }
     var saved = "ro";
-    try { saved = localStorage.getItem("instalcalc-legal-lang") || "ro"; } catch (e) {}
+    try { saved = localStorage.getItem("instalcalc-lang") || "ro"; } catch (e) {}
     apply(saved);
-    toggle.addEventListener("click", function () {
-        apply(document.documentElement.lang === "de" ? "ro" : "de");
+    buttons.forEach(function (btn) {
+        btn.addEventListener("click", function () { apply(btn.getAttribute("data-set-lang")); });
     });
 })();
 </script>

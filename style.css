@@ -75,6 +75,11 @@ body {
 
 .site-header nav a:hover { color: var(--ink); }
 
+.lang-switch {
+    display: inline-flex;
+    gap: 6px;
+}
+
 .lang-toggle {
     border: 1px solid var(--line);
     background: var(--bg-soft);
@@ -85,6 +90,12 @@ body {
     padding: 5px 12px;
     border-radius: 999px;
     cursor: pointer;
+}
+
+.lang-toggle.active {
+    background: var(--ink);
+    color: var(--bg);
+    border-color: var(--ink);
 }
 
 /* Layout */
