@@ -252,9 +252,6 @@ span[data-lang].active, a[data-lang].active { display: inline; }
 }
 .contact-form textarea { resize: vertical; }
 .contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus { outline: 2px solid var(--brand-blue); outline-offset: 1px; }
-.contact-form .consent { display: flex; gap: 10px; align-items: flex-start; font-weight: 400; color: var(--muted); }
-.contact-form .consent input { width: auto; margin-top: 5px; }
 .contact-form button.mail-btn { display: inline-flex; justify-self: start; border: none; cursor: pointer; font-family: inherit; }
-.contact-form .hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; }
-.form-success { background: var(--bg-soft); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 20px; }
-.contact-form[hidden], .form-success[hidden] { display: none; }
+.mailto-fallback { display: grid; gap: 10px; background: var(--bg-soft); border: 1px solid var(--line); border-radius: var(--radius); padding: 16px 20px; }
+.mailto-fallback[hidden] { display: none; }

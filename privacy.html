@@ -36,7 +36,7 @@
 
 <div data-lang="ro">
 <h1>Politica de Confidențialitate - InstalCalc</h1>
-<p><strong>Data ultimei actualizări:</strong> 31 august 2026</p>
+<p><strong>Data ultimei actualizări:</strong> 12 noiembrie 2026</p>
 <h2>1. Operatorul aplicației</h2>
 <p>Această aplicație este operată de:</p>
 <p><strong>Florin-Vasile Crăciun</strong><br>Bahnhofstraße 1<br>35649 Bischoffen, Germania<br>Email: support@instalcalc.ro<br>Web: instalcalc.ro</p>
@@ -53,6 +53,8 @@
 <li>materiale, biblioteci, setări și preferințe salvate de utilizator</li>
 <li>profilul instalatorului (firmă, CUI, IBAN, reprezentant legal, capital social)</li>
 <li>în modulele Oferte Clienți și Mentenanță: datele clienților (nume, telefon, email, CNP/CUI, adresă), conținutul ofertelor și devizelor, semnăturile desenate pe ecran și PDF-urile semnate atașate</li>
+<li>în modulul Măsurători lucrare: numele și adresele clientului, adresa șantierului, cantitățile măsurate și semnăturile ambelor părți</li>
+<li>fotografiile făcute în aplicație (poze cotate cu ruleta AR, poze din fișele de service) și scanările 3D ale încăperilor</li>
 <li>informații tehnice privind produsele și starea abonamentului furnizate prin serviciile Apple</li>
 </ul>
 <h2>3.1. Date personale introduse opțional în proiecte</h2>
@@ -62,7 +64,7 @@
 <li>nu sunt transmise dezvoltatorului sau altor servicii externe</li>
 <li>pot fi șterse oricând prin ștergerea proiectului din aplicație</li>
 </ul>
-<h2>3.2. Date despre clienții utilizatorului (modulele Oferte și Mentenanță)</h2>
+<h2>3.2. Date despre clienții utilizatorului (modulele Oferte, Mentenanță și Măsurători lucrare)</h2>
 <p>Când utilizatorul introduce date despre clienții săi (persoane fizice sau juridice) în modulul Oferte Clienți sau în modulul Mentenanță, utilizatorul devine <strong>operator de date personale</strong> în sensul Regulamentului UE 2016/679 (GDPR). Utilizatorul are responsabilitatea de a-și informa clienții cu privire la prelucrarea datelor lor și de a aplica prevederile legale aplicabile. Același lucru se aplică numelui, adreselor și semnăturilor din modulul Măsurători lucrare.</p>
 <ul>
 <li>aceste date sunt stocate strict local pe dispozitivul utilizatorului</li>
@@ -70,17 +72,22 @@
 <li>semnăturile desenate pe ecran (tehnician și client) sunt stocate local și apar doar în PDF-urile generate</li>
 <li>PDF-urile semnate sunt salvate cu verificare de integritate SHA-256</li>
 <li>ofertele acceptate trebuie păstrate 5 ani conform art. 25 din Legea 82/1991; aplicația avertizează utilizatorul când încearcă să șteargă o ofertă acceptată înainte de expirarea termenului</li>
+<li>în Germania, documentele care stau la baza facturii (de exemplu Aufmaß-ul semnat) se păstrează de regulă 8 ani, iar corespondența comercială 6 ani (§ 147 AO, § 257 HGB)</li>
+<li>temeiul pentru care utilizatorul prelucrează datele clienților este de regulă executarea contractului (art. 6 alin. 1 lit. b GDPR) și obligațiile legale de păstrare (lit. c); PDF-ul de măsurători include o notă scurtă de informare pentru client</li>
+<li>pentru cererile clienților (acces, portabilitate, ștergere), aplicația oferă ecranul „Drepturile clientului (GDPR)”, disponibil în modulul Măsurători lucrare în ambele țări și, în România, și în Oferte și Mentenanță: exportă datele clientului în JSON sau le șterge, inclusiv din backup-urile automate locale</li>
 </ul>
 <h2>4. Unde sunt stocate datele</h2>
 <ul>
 <li>Datele introduse de utilizator sunt stocate în principal local pe dispozitiv.</li>
-<li>Aplicația utilizează mecanisme standard iOS/iPadOS, inclusiv <code>UserDefaults</code>, pentru setări, proiecte și rezultate salvate local.</li>
+<li>Proiectele, rezultatele și datele clienților sunt salvate ca fișiere în zona privată a aplicației, cu cea mai strictă protecție iOS (Data Protection „Complete”): fișierele sunt criptate cât timp telefonul e blocat. Setările simple sunt păstrate în <code>UserDefaults</code>.</li>
+<li>Aplicația păstrează local până la 10 copii de siguranță automate, în aceeași zonă protejată. Când ștergi date ale unui client (un document, sau prin „Drepturile clientului”), aceste copii sunt curățate.</li>
+<li>Backup-ul manual (fișier JSON) nu este criptat de aplicație. Îl salvezi unde alegi tu (pe telefon, în iCloud Drive etc.); păstrează-l în siguranță, fiindcă poate conține datele clienților.</li>
 <li>Exporturile PDF și fișierele generate sunt create local și sunt partajate numai la inițiativa utilizatorului.</li>
 <li>Când utilizatorul alege să trimită o ofertă sau un document printr-un canal extern (de exemplu WhatsApp, SMS, email sau foaia de partajare iOS), conținutul respectiv — care poate include date ale clientului, precum numărul de telefon și textul ofertei — este transmis prin serviciul ales de utilizator și este supus politicilor acelui serviciu (de exemplu Meta pentru WhatsApp). Aplicația nu trimite automat aceste date; transferul are loc doar la acțiunea explicită a utilizatorului.</li>
 <li>Dacă utilizatorul alege funcția de backup în iCloud Drive, fișierul de backup (care poate conține toate proiectele, planurile atașate și datele clienților) este salvat în contul iCloud al utilizatorului, prin infrastructura Apple și conform politicilor Apple. Backup-ul poate fi salvat, ca alternativă, local pe dispozitiv.</li>
 <li>În măsura în care Apple furnizează informații despre produse, tranzacții sau abonamente, acestea sunt procesate prin infrastructura Apple, conform politicilor Apple.</li>
 <li>Unele funcții solare pot interoga PVGIS/JRC sau alte servicii externe de date climatice folosind parametri tehnici limitați, precum județul/coordonatele aproximative și unghiul panoului, numai pentru calculul solicitat de utilizator.</li>
-<li>Serviciul PVGIS/JRC primește doar parametrii necesari cererii tehnice (de exemplu latitudine/longitudine aproximativă, înclinare/orientare și opțiuni de calcul), nu numele proiectului, numele beneficiarului, planuri, fotografii sau rapoarte PDF.</li>
+<li>Serviciul PVGIS/JRC primește doar parametrii necesari cererii tehnice (latitudine/longitudine rotunjite la 4 zecimale, adică circa 10 m, înclinare/orientare și opțiuni de calcul), nu numele proiectului, numele beneficiarului, planuri, fotografii sau rapoarte PDF. Cererea pleacă direct de pe telefon către JRC (Comisia Europeană), care vede și adresa IP, ca la orice cerere pe internet.</li>
 </ul>
 <h2>5. Achiziții în aplicație și abonamente</h2>
 <p>Aplicația poate oferi acces la funcții suplimentare prin abonamente sau alte achiziții în aplicație disponibile prin Apple App Store.</p>
@@ -105,7 +112,7 @@
 <li><strong>Cameră</strong> — pentru scanarea 3D a încăperilor cu LiDAR, măsurarea umbririi panourilor fotovoltaice, ruleta AR (măsurare distanțe), scanarea documentelor (oferte externe) și scanarea seriei echipamentelor în fișele de service. Imaginile procesate de cameră (inclusiv recunoașterea textului la scanarea ofertelor și a seriilor) sunt prelucrate <strong>local pe dispozitiv</strong> și nu sunt transmise dezvoltatorului.</li>
 <li><strong>Locație (când folosești aplicația)</strong> — folosită <strong>doar pentru busolă</strong>: orientarea față de nord la scanarea 3D a încăperilor și la măsurarea orientării/umbririi panourilor fotovoltaice. Poziția ta <strong>nu este stocată și nu este partajată</strong> cu dezvoltatorul, iar permisiunea poate fi revocată oricând din Setările sistemului. (Coordonatele aproximative folosite pentru datele climatice solare provin din județul/locația introduse de utilizator, nu din această permisiune — vezi secțiunile 4 și 12.)</li>
 <li><strong>Adăugare în galeria foto</strong> — pentru a salva, la cererea utilizatorului, pozele cu măsurătorile AR în biblioteca foto proprie.</li>
-<li><strong>Notificări</strong> — pentru remindere locale privind valabilitatea și urmărirea ofertelor și scadențele lucrărilor de mentenanță. Reminderele sunt programate <strong>local pe dispozitiv</strong> prin mecanismul standard iOS; conținutul lor nu este transmis dezvoltatorului sau altor servicii externe, iar permisiunea poate fi revocată oricând din Setările sistemului.</li>
+<li><strong>Notificări</strong> — pentru remindere locale privind valabilitatea și urmărirea ofertelor și scadențele lucrărilor de mentenanță. Reminderele sunt programate <strong>local pe dispozitiv</strong> prin mecanismul standard iOS; conținutul lor nu este transmis dezvoltatorului sau altor servicii externe, iar permisiunea poate fi revocată oricând din Setările sistemului. Reminderele conțin numele clientului și pot apărea pe ecranul blocat; din Setări iOS → Notificări poți ascunde previzualizările.</li>
 </ul>
 <p>Aplicația <strong>nu</strong> solicită acces la microfon sau la agenda de contacte. Datele clienților folosite în modulele Oferte și Mentenanță sunt introduse manual de utilizator, nu preluate din agenda telefonului.</p>
 <p>Dacă în viitor vor exista funcții care necesită permisiuni suplimentare, acestea vor fi solicitate de sistem doar în contextul utilizării respectivei funcții.</p>
@@ -121,7 +128,8 @@
 <li>îmbunătățirea experienței locale de utilizare a aplicației</li>
 </ul>
 <h2>9. Temeiul și caracterul utilizării</h2>
-<p>Aplicația este un instrument software utilizat la inițiativa utilizatorului. Utilizatorul decide ce date introduce, ce proiecte salvează și ce exporturi generează sau distribuie.</p>
+<p>Aplicația este un instrument software utilizat la inițiativa utilizatorului. Utilizatorul decide ce date introduce, ce proiecte salvează și ce exporturi generează sau distribuie. Datele introduse în aplicație rămân pe dispozitiv: dezvoltatorul nu le primește și nu le prelucrează.</p>
+<p>Dezvoltatorul prelucrează date personale doar când îl contactezi (email sau formular): temeiul este art. 6 alin. 1 lit. b GDPR (răspunsul la cererea ta) și lit. f (interesul legitim de a oferi suport). Achizițiile sunt prelucrate de Apple, în calitate de operator separat.</p>
 <h2>10. Securitate</h2>
 <ul>
 <li>Datele sunt stocate în principal local pe dispozitivul utilizatorului.</li>
@@ -136,19 +144,20 @@
 <li>ștergere</li>
 <li>restricționare</li>
 <li>opoziție</li>
+<li>portabilitatea datelor</li>
 <li>informații suplimentare privind prelucrarea</li>
 </ul>
-<p>Pentru solicitări privind protecția datelor, utilizați datele de contact și linkurile de suport publicate în pagina aplicației.</p>
+<p>Pentru solicitări privind protecția datelor scrie la support@instalcalc.ro. Ai și dreptul să depui o plângere la o autoritate de supraveghere (art. 77 GDPR): pentru dezvoltator este competent Der Hessische Beauftragte für Datenschutz und Informationsfreiheit (Wiesbaden); poți apela și la autoritatea din țara ta, de exemplu ANSPDCP în România.</p>
 <h2>12. Transferuri către terți</h2>
 <p>Nu vindem date personale și nu transferăm datele utilizatorilor către terți în scopuri comerciale proprii.</p>
 <p>Pentru achizițiile în aplicație, anumite date tehnice și comerciale pot fi procesate de Apple conform politicilor și condițiilor Apple.</p>
 <p>Pentru funcțiile solare care folosesc PVGIS/JRC, cererea tehnică este transmisă către infrastructura JRC/PVGIS pentru obținerea datelor climatice solicitate. Aceste date sunt folosite numai pentru calculul inițiat de utilizator și nu pentru tracking publicitar.</p>
 <p>Atunci când utilizatorul alege să partajeze documente prin canale externe (WhatsApp, SMS, email, foaia de partajare iOS) sau să salveze un backup în iCloud Drive, datele sunt transmise prin serviciile respective la inițiativa utilizatorului și sunt supuse politicilor acelor furnizori. Aceste transferuri nu sunt inițiate automat de aplicație.</p>
-<p>Formularul de contact de pe site (<a href="contact.html">instalcalc.ro/contact</a>) este transmis prin serviciul FormSubmit (formsubmit.co), care ne trimite mesajul prin email la support@instalcalc.ro. Se transmit numai datele completate de tine (nume, email, subiect, dispozitiv, mesaj), exclusiv pentru a-ți răspunde (art. 6 alin. 1 lit. b și f GDPR). Mesajele se șterg când nu mai sunt necesare pentru solicitarea ta. Dacă nu dorești folosirea acestui serviciu, ne poți scrie direct pe email.</p>
+<p>Formularul de contact de pe site (<a href="contact.html">instalcalc.ro/contact</a>) nu trimite date către niciun server: doar compune mesajul și deschide aplicația ta de email, din care îl trimiți tu la support@instalcalc.ro. Emailurile primite le folosim exclusiv pentru a-ți răspunde (art. 6 alin. 1 lit. b și f GDPR) și le ștergem când nu mai sunt necesare pentru solicitarea ta. Căsuța de email este găzduită de Zoho, în centrul de date din Uniunea Europeană, pe baza unui contract de prelucrare a datelor (art. 28 GDPR).</p>
 <h2>13. Modificări</h2>
 <p>Această politică poate fi actualizată periodic. Versiunea curentă trebuie publicată și la URL-ul extern indicat în pagina aplicației și în materialele oficiale de suport.</p>
 <h2>14. Contact</h2>
-<p>Pentru întrebări privind confidențialitatea, utilizați datele de contact și linkurile de suport publicate în pagina aplicației.</p>
+<p>Florin-Vasile Crăciun, Bahnhofstraße 1, 35649 Bischoffen, Germania · support@instalcalc.ro · <a href="contact.html">formular de contact</a> · <a href="impressum.html">Impressum</a></p>
 <hr>
 <p><strong>Notă:</strong> Aplicația este un instrument tehnic de suport pentru calcule, estimări preliminare și gestionare de proiecte. Utilizatorul este responsabil pentru datele pe care le introduce și pentru modul în care utilizează sau distribuie rezultatele generate.</p>
 <a class="back-link" href="index.html">← Înapoi la pagina principală</a>
@@ -156,7 +165,7 @@
 
 <div data-lang="en">
 <h1>Privacy Policy - InstalCalc</h1>
-<p><strong>Last updated:</strong> August 31, 2026</p>
+<p><strong>Last updated:</strong> November 12, 2026</p>
 <h2>1. App operator</h2>
 <p>This app is operated by:</p>
 <p><strong>Florin-Vasile Crăciun</strong><br>Bahnhofstraße 1<br>35649 Bischoffen, Germany<br>Email: support@instalcalc.ro<br>Web: instalcalc.ro</p>
@@ -173,6 +182,8 @@
 <li>materials, libraries, settings, and preferences saved by the user</li>
 <li>the installer profile (company, tax ID, IBAN, legal representative, share capital)</li>
 <li>in the Client Offers and Maintenance modules: client data (name, phone, email, tax/personal ID, address), the content of offers and quotes, signatures drawn on screen, and attached signed PDFs</li>
+<li>in the Work measurements module: the client's name and addresses, the site address, the measured quantities and both parties' signatures</li>
+<li>photos taken in the app (dimensioned AR tape-measure photos, service report photos) and 3D room scans</li>
 <li>technical information about products and subscription status provided through Apple services</li>
 </ul>
 <h2>3.1. Personal data entered optionally in projects</h2>
@@ -182,7 +193,7 @@
 <li>it is not transmitted to the developer or other external services</li>
 <li>it can be deleted at any time by deleting the project from the app</li>
 </ul>
-<h2>3.2. Data about the user's clients (Offers and Maintenance modules)</h2>
+<h2>3.2. Data about the user's clients (Offers, Maintenance and Work measurements modules)</h2>
 <p>When the user enters data about their clients (individuals or legal entities) in the Client Offers module or the Maintenance module, the user becomes a <strong>data controller</strong> within the meaning of Regulation (EU) 2016/679 (GDPR). The user is responsible for informing their clients about the processing of their data and for applying the applicable legal provisions. The same applies to the names, addresses and signatures in the Work measurements module.</p>
 <ul>
 <li>this data is stored strictly locally on the user's device</li>
@@ -190,17 +201,22 @@
 <li>signatures drawn on screen (technician and client) are stored locally and appear only in the generated PDFs</li>
 <li>signed PDFs are saved with SHA-256 integrity verification</li>
 <li>accepted offers must be kept for 5 years under Art. 25 of Romanian Law 82/1991 (accounting); the app warns the user when trying to delete an accepted offer before that period expires</li>
+<li>in Germany, documents underlying an invoice (for example the signed Aufmaß) are generally kept for 8 years, and business correspondence for 6 years (§ 147 AO, § 257 HGB)</li>
+<li>the legal basis on which the user processes client data is usually the performance of the contract (Art. 6(1)(b) GDPR) and legal retention obligations (point (c)); the measurement PDF includes a short information notice for the client</li>
+<li>for client requests (access, portability, erasure), the app provides a "Client rights (GDPR)" screen, available in the Work measurements module in both countries and, in Romania, also in Offers and Maintenance: it exports the client's data as JSON or erases it, including from the local automatic backups</li>
 </ul>
 <h2>4. Where the data is stored</h2>
 <ul>
 <li>Data entered by the user is stored primarily locally on the device.</li>
-<li>The app uses standard iOS/iPadOS mechanisms, including <code>UserDefaults</code>, for locally saved settings, projects, and results.</li>
+<li>Projects, results and client data are saved as files in the app's private storage area, with the strictest iOS protection (Data Protection "Complete"): the files are encrypted while the phone is locked. Simple settings are kept in <code>UserDefaults</code>.</li>
+<li>The app keeps up to 10 automatic backup copies locally, in the same protected area. When you delete a client's data (a document, or via "Client rights"), these copies are cleaned up.</li>
+<li>The manual backup (JSON file) is not encrypted by the app. You save it wherever you choose (on the phone, in iCloud Drive, etc.); keep it safe, as it may contain client data.</li>
 <li>PDF exports and generated files are created locally and shared only at the user's initiative.</li>
 <li>When the user chooses to send an offer or document through an external channel (e.g. WhatsApp, SMS, email, or the iOS share sheet), that content — which may include client data such as phone number and offer text — is transmitted through the service chosen by the user and is subject to that service's policies (e.g. Meta for WhatsApp). The app does not send this data automatically; the transfer happens only through the user's explicit action.</li>
 <li>If the user chooses the iCloud Drive backup feature, the backup file (which may contain all projects, attached plans, and client data) is saved in the user's iCloud account, through Apple's infrastructure and in accordance with Apple's policies. The backup can alternatively be saved locally on the device.</li>
 <li>To the extent Apple provides information about products, transactions, or subscriptions, this is processed through Apple's infrastructure, in accordance with Apple's policies.</li>
 <li>Some solar features may query PVGIS/JRC or other external climate data services using limited technical parameters, such as the county/approximate coordinates and panel angle, only for the calculation requested by the user.</li>
-<li>The PVGIS/JRC service only receives the parameters necessary for the technical request (e.g. approximate latitude/longitude, tilt/orientation, and calculation options), not the project name, the beneficiary's name, plans, photos, or PDF reports.</li>
+<li>The PVGIS/JRC service only receives the parameters necessary for the technical request (latitude/longitude rounded to 4 decimals, i.e. about 10 m, tilt/orientation, and calculation options), not the project name, the beneficiary's name, plans, photos, or PDF reports. The request goes directly from the phone to the JRC (European Commission), which also sees the IP address, as with any internet request.</li>
 </ul>
 <h2>5. In-app purchases and subscriptions</h2>
 <p>The app may offer access to additional features through subscriptions or other in-app purchases available through the Apple App Store.</p>
@@ -225,7 +241,7 @@
 <li><strong>Camera</strong> — for 3D LiDAR room scanning, measuring shading on photovoltaic panels, the AR tape measure (distance measurement), scanning documents (external offers), and scanning equipment serial numbers in service sheets. Images processed by the camera (including text recognition when scanning offers and serial numbers) are processed <strong>locally on the device</strong> and are not transmitted to the developer.</li>
 <li><strong>Location (while using the app)</strong> — used <strong>only for the compass</strong>: north orientation during 3D room scanning and when measuring the orientation/shading of photovoltaic panels. Your location is <strong>not stored and not shared</strong> with the developer, and the permission can be revoked at any time from the system Settings. (The approximate coordinates used for solar climate data come from the county/location entered by the user, not from this permission — see sections 4 and 12.)</li>
 <li><strong>Add to Photo Library</strong> — to save, at the user's request, AR measurement photos to their own photo library.</li>
-<li><strong>Notifications</strong> — for local reminders about offer validity and follow-up, and maintenance work due dates. Reminders are scheduled <strong>locally on the device</strong> through the standard iOS mechanism; their content is not transmitted to the developer or other external services, and the permission can be revoked at any time from the system Settings.</li>
+<li><strong>Notifications</strong> — for local reminders about offer validity and follow-up, and maintenance work due dates. Reminders are scheduled <strong>locally on the device</strong> through the standard iOS mechanism; their content is not transmitted to the developer or other external services, and the permission can be revoked at any time from the system Settings. Reminders contain the client's name and may appear on the lock screen; you can hide previews in iOS Settings → Notifications.</li>
 </ul>
 <p>The app does <strong>not</strong> request access to the microphone or the contacts list. Client data used in the Offers and Maintenance modules is entered manually by the user, not taken from the phone's address book.</p>
 <p>Should future features require additional permissions, these will be requested by the system only in the context of using that specific feature.</p>
@@ -241,7 +257,8 @@
 <li>improving the local usage experience of the app</li>
 </ul>
 <h2>9. Basis and nature of use</h2>
-<p>The app is a software tool used at the user's initiative. The user decides what data to enter, which projects to save, and which exports to generate or distribute.</p>
+<p>The app is a software tool used at the user's initiative. The user decides what data to enter, which projects to save, and which exports to generate or distribute. Data entered in the app stays on the device: the developer does not receive or process it.</p>
+<p>The developer processes personal data only when you contact us (email or form): the legal basis is Art. 6(1)(b) GDPR (answering your request) and point (f) (legitimate interest in providing support). Purchases are processed by Apple as a separate controller.</p>
 <h2>10. Security</h2>
 <ul>
 <li>Data is stored primarily locally on the user's device.</li>
@@ -256,19 +273,20 @@
 <li>erasure</li>
 <li>restriction of processing</li>
 <li>objection</li>
+<li>data portability</li>
 <li>additional information about the processing</li>
 </ul>
-<p>For data protection requests, use the contact details and support links published on the app's page.</p>
+<p>For data protection requests, write to support@instalcalc.ro. You also have the right to lodge a complaint with a supervisory authority (Art. 77 GDPR): for the developer, the competent authority is the Hessian Commissioner for Data Protection and Freedom of Information (Wiesbaden); you may also contact the authority in your own country, for example ANSPDCP in Romania.</p>
 <h2>12. Transfers to third parties</h2>
 <p>We do not sell personal data and do not transfer user data to third parties for our own commercial purposes.</p>
 <p>For in-app purchases, certain technical and commercial data may be processed by Apple in accordance with Apple's policies and terms.</p>
 <p>For solar features that use PVGIS/JRC, the technical request is sent to the JRC/PVGIS infrastructure to obtain the requested climate data. This data is used only for the calculation initiated by the user and not for advertising tracking.</p>
 <p>When the user chooses to share documents through external channels (WhatsApp, SMS, email, iOS share sheet) or to save a backup in iCloud Drive, the data is transmitted through those services at the user's initiative and is subject to those providers' policies. These transfers are not initiated automatically by the app.</p>
-<p>The contact form on the website (<a href="contact.html">instalcalc.ro/contact</a>) is delivered through the FormSubmit service (formsubmit.co), which forwards the message to us by email at support@instalcalc.ro. Only the data you enter (name, email, topic, device, message) is transmitted, solely to reply to you (Art. 6(1)(b) and (f) GDPR). Messages are deleted once they are no longer needed for your request. If you prefer not to use this service, you can email us directly.</p>
+<p>The contact form on the website (<a href="contact.html">instalcalc.ro/contact</a>) does not send data to any server: it only composes the message and opens your email app, from which you send it to support@instalcalc.ro yourself. We use the emails we receive solely to reply to you (Art. 6(1)(b) and (f) GDPR) and delete them once they are no longer needed for your request. The mailbox is hosted by Zoho in its European Union data centre, under a data processing agreement (Art. 28 GDPR).</p>
 <h2>13. Changes</h2>
 <p>This policy may be updated periodically. The current version must also be published at the external URL indicated on the app's page and in official support materials.</p>
 <h2>14. Contact</h2>
-<p>For questions about privacy, use the contact details and support links published on the app's page.</p>
+<p>Florin-Vasile Crăciun, Bahnhofstraße 1, 35649 Bischoffen, Germany · support@instalcalc.ro · <a href="contact.html">contact form</a> · <a href="impressum.html">Impressum</a></p>
 <hr>
 <p><strong>Note:</strong> The app is a technical support tool for calculations, preliminary estimates, and project management. The user is responsible for the data they enter and for how they use or distribute the generated results.</p>
 <a class="back-link" href="index.html">← Back to home page</a>
@@ -276,7 +294,7 @@
 
 <div data-lang="de">
 <h1>Datenschutzerklärung - InstalCalc</h1>
-<p><strong>Zuletzt aktualisiert:</strong> 31. August 2026</p>
+<p><strong>Zuletzt aktualisiert:</strong> 12. November 2026</p>
 <h2>1. Betreiber der App</h2>
 <p>Diese App wird betrieben von:</p>
 <p><strong>Florin-Vasile Crăciun</strong><br>Bahnhofstraße 1<br>35649 Bischoffen, Deutschland<br>E-Mail: support@instalcalc.ro<br>Web: instalcalc.ro</p>
@@ -293,6 +311,8 @@
 <li>vom Nutzer gespeicherte Materialien, Bibliotheken, Einstellungen und Präferenzen</li>
 <li>das Installateur-Profil (Firma, Steuernummer/USt-IdNr., IBAN, gesetzlicher Vertreter, Stammkapital)</li>
 <li>in den Modulen Kundenangebote und Wartung: Kundendaten (Name, Telefon, E-Mail, Steuer-/Personenkennnummer, Adresse), Inhalte von Angeboten und Kostenvoranschlägen, auf dem Bildschirm gezeichnete Unterschriften und angehängte signierte PDFs</li>
+<li>im Modul Aufmaß: Name und Adressen des Kunden, Baustellenadresse, gemessene Mengen und die Unterschriften beider Seiten</li>
+<li>in der App aufgenommene Fotos (bemaßte Fotos des AR-Maßbands, Fotos aus Wartungsberichten) und 3D-Raumscans</li>
 <li>über Apple-Dienste bereitgestellte technische Informationen zu Produkten und Abonnementstatus</li>
 </ul>
 <h2>3.1. Optional eingegebene personenbezogene Daten in Projekten</h2>
@@ -302,7 +322,7 @@
 <li>sie werden nicht an den Entwickler oder andere externe Dienste übermittelt</li>
 <li>sie können jederzeit durch Löschen des Projekts in der App entfernt werden</li>
 </ul>
-<h2>3.2. Daten über die Kunden des Nutzers (Module Angebote und Wartung)</h2>
+<h2>3.2. Daten über die Kunden des Nutzers (Module Angebote, Wartung und Aufmaß)</h2>
 <p>Wenn der Nutzer Daten über seine Kunden (natürliche oder juristische Personen) im Modul Kundenangebote oder im Modul Wartung eingibt, wird der Nutzer zum <strong>Verantwortlichen</strong> im Sinne der Verordnung (EU) 2016/679 (DSGVO). Der Nutzer trägt die Verantwortung, seine Kunden über die Verarbeitung ihrer Daten zu informieren und die anwendbaren gesetzlichen Vorgaben einzuhalten. Dasselbe gilt für Namen, Adressen und Unterschriften im Modul Aufmaß.</p>
 <ul>
 <li>diese Daten werden ausschließlich lokal auf dem Gerät des Nutzers gespeichert</li>
@@ -310,17 +330,22 @@
 <li>auf dem Bildschirm gezeichnete Unterschriften (Techniker und Kunde) werden lokal gespeichert und erscheinen nur in den erzeugten PDFs</li>
 <li>signierte PDFs werden mit SHA-256-Integritätsprüfung gespeichert</li>
 <li>angenommene Angebote müssen gemäß Art. 25 des rumänischen Buchführungsgesetzes Nr. 82/1991 5 Jahre aufbewahrt werden; die App warnt den Nutzer, wenn er versucht, ein angenommenes Angebot vor Ablauf dieser Frist zu löschen</li>
+<li>in Deutschland sind Unterlagen, die einer Rechnung zugrunde liegen (z. B. das unterschriebene Aufmaß), in der Regel 8 Jahre und Geschäftsbriefe 6 Jahre aufzubewahren (§ 147 AO, § 257 HGB)</li>
+<li>Rechtsgrundlage für die Verarbeitung der Kundendaten durch den Nutzer ist in der Regel die Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO) und die gesetzliche Aufbewahrungspflicht (lit. c); das Aufmaß-PDF enthält einen kurzen Datenschutzhinweis für den Kunden</li>
+<li>für Anfragen von Kunden (Auskunft, Datenübertragbarkeit, Löschung) bietet die App den Bildschirm „Rechte des Kunden (DSGVO)“, im Modul Aufmaß in beiden Ländern und in Rumänien zusätzlich in Angebote und Wartung: er exportiert die Daten des Kunden als JSON oder löscht sie, auch aus den lokalen automatischen Sicherungen</li>
 </ul>
 <h2>4. Wo die Daten gespeichert werden</h2>
 <ul>
 <li>Vom Nutzer eingegebene Daten werden hauptsächlich lokal auf dem Gerät gespeichert.</li>
-<li>Die App verwendet Standard-iOS/iPadOS-Mechanismen, einschließlich <code>UserDefaults</code>, für lokal gespeicherte Einstellungen, Projekte und Ergebnisse.</li>
+<li>Projekte, Ergebnisse und Kundendaten werden als Dateien im privaten Speicherbereich der App gespeichert, mit dem strengsten iOS-Schutz (Data Protection „Complete“): Die Dateien sind verschlüsselt, solange das Gerät gesperrt ist. Einfache Einstellungen werden in <code>UserDefaults</code> gespeichert.</li>
+<li>Die App hält lokal bis zu 10 automatische Sicherungskopien im selben geschützten Bereich vor. Wenn Sie Daten eines Kunden löschen (ein Dokument oder über „Rechte des Kunden“), werden diese Kopien bereinigt.</li>
+<li>Die manuelle Sicherung (JSON-Datei) wird von der App nicht verschlüsselt. Sie speichern sie, wo Sie möchten (auf dem Gerät, in iCloud Drive usw.); bewahren Sie sie sicher auf, da sie Kundendaten enthalten kann.</li>
 <li>PDF-Exporte und erzeugte Dateien werden lokal erstellt und nur auf Initiative des Nutzers geteilt.</li>
 <li>Wenn der Nutzer ein Angebot oder Dokument über einen externen Kanal versendet (z. B. WhatsApp, SMS, E-Mail oder das iOS-Freigabeblatt), wird der jeweilige Inhalt — der Kundendaten wie Telefonnummer und Angebotstext enthalten kann — über den vom Nutzer gewählten Dienst übermittelt und unterliegt den Richtlinien dieses Dienstes (z. B. Meta für WhatsApp). Die App sendet diese Daten nicht automatisch; die Übermittlung erfolgt nur auf ausdrückliche Aktion des Nutzers.</li>
 <li>Entscheidet sich der Nutzer für die iCloud-Drive-Sicherungsfunktion, wird die Sicherungsdatei (die alle Projekte, angehängte Pläne und Kundendaten enthalten kann) im iCloud-Konto des Nutzers über die Apple-Infrastruktur und gemäß den Apple-Richtlinien gespeichert. Alternativ kann die Sicherung lokal auf dem Gerät gespeichert werden.</li>
 <li>Soweit Apple Informationen zu Produkten, Transaktionen oder Abonnements bereitstellt, werden diese über die Apple-Infrastruktur gemäß den Apple-Richtlinien verarbeitet.</li>
 <li>Einige Solarfunktionen können PVGIS/JRC oder andere externe Klimadaten-Dienste mit begrenzten technischen Parametern abfragen, wie etwa Landkreis/ungefähre Koordinaten und Modulneigung, ausschließlich für die vom Nutzer angeforderte Berechnung.</li>
-<li>Der Dienst PVGIS/JRC erhält nur die für die technische Anfrage erforderlichen Parameter (z. B. ungefähre Breiten-/Längengrad, Neigung/Ausrichtung und Berechnungsoptionen), nicht den Projektnamen, den Namen des Auftraggebers, Pläne, Fotos oder PDF-Berichte.</li>
+<li>Der Dienst PVGIS/JRC erhält nur die für die technische Anfrage erforderlichen Parameter (Breiten-/Längengrad auf 4 Nachkommastellen gerundet, also etwa 10 m, Neigung/Ausrichtung und Berechnungsoptionen), nicht den Projektnamen, den Namen des Auftraggebers, Pläne, Fotos oder PDF-Berichte. Die Anfrage geht direkt vom Gerät an die JRC (Europäische Kommission), die dabei – wie bei jeder Internetanfrage – auch die IP-Adresse sieht.</li>
 </ul>
 <h2>5. In-App-Käufe und Abonnements</h2>
 <p>Die App kann Zugang zu zusätzlichen Funktionen über Abonnements oder andere In-App-Käufe anbieten, die über den Apple App Store verfügbar sind.</p>
@@ -345,7 +370,7 @@
 <li><strong>Kamera</strong> — für die 3D-LiDAR-Raumerfassung, die Messung der Verschattung von Photovoltaikmodulen, das AR-Maßband (Entfernungsmessung), das Scannen von Dokumenten (externe Angebote) und das Scannen von Seriennummern in Wartungsblättern. Von der Kamera verarbeitete Bilder (einschließlich Texterkennung beim Scannen von Angeboten und Seriennummern) werden <strong>lokal auf dem Gerät</strong> verarbeitet und nicht an den Entwickler übermittelt.</li>
 <li><strong>Standort (bei Nutzung der App)</strong> — wird <strong>ausschließlich für den Kompass</strong> verwendet: Nordausrichtung bei der 3D-Raumerfassung und bei der Messung von Ausrichtung/Verschattung der Photovoltaikmodule. Ihr Standort wird <strong>nicht gespeichert und nicht geteilt</strong> mit dem Entwickler, und die Berechtigung kann jederzeit in den Systemeinstellungen widerrufen werden. (Die für solare Klimadaten verwendeten ungefähren Koordinaten stammen aus dem vom Nutzer eingegebenen Landkreis/Standort, nicht aus dieser Berechtigung — siehe Abschnitte 4 und 12.)</li>
 <li><strong>Hinzufügen zur Fotobibliothek</strong> — um auf Wunsch des Nutzers die AR-Messfotos in dessen eigener Fotobibliothek zu speichern.</li>
-<li><strong>Benachrichtigungen</strong> — für lokale Erinnerungen zur Gültigkeit und Nachverfolgung von Angeboten sowie zu Fälligkeiten von Wartungsarbeiten. Die Erinnerungen werden <strong>lokal auf dem Gerät</strong> über den iOS-Standardmechanismus geplant; ihr Inhalt wird nicht an den Entwickler oder andere externe Dienste übermittelt, und die Berechtigung kann jederzeit in den Systemeinstellungen widerrufen werden.</li>
+<li><strong>Benachrichtigungen</strong> — für lokale Erinnerungen zur Gültigkeit und Nachverfolgung von Angeboten sowie zu Fälligkeiten von Wartungsarbeiten. Die Erinnerungen werden <strong>lokal auf dem Gerät</strong> über den iOS-Standardmechanismus geplant; ihr Inhalt wird nicht an den Entwickler oder andere externe Dienste übermittelt, und die Berechtigung kann jederzeit in den Systemeinstellungen widerrufen werden. Erinnerungen enthalten den Kundennamen und können auf dem Sperrbildschirm erscheinen; unter iOS-Einstellungen → Mitteilungen können Sie die Vorschau ausblenden.</li>
 </ul>
 <p>Die App fordert <strong>keinen</strong> Zugriff auf Mikrofon oder Kontakte an. Kundendaten in den Modulen Angebote und Wartung werden vom Nutzer manuell eingegeben, nicht aus dem Adressbuch übernommen.</p>
 <p>Sollten künftig Funktionen hinzukommen, die zusätzliche Berechtigungen benötigen, werden diese vom System nur im Kontext der Nutzung der jeweiligen Funktion angefragt.</p>
@@ -361,7 +386,8 @@
 <li>die Verbesserung der lokalen Nutzungserfahrung der App</li>
 </ul>
 <h2>9. Rechtsgrundlage und Charakter der Nutzung</h2>
-<p>Die App ist ein Software-Werkzeug, das auf Initiative des Nutzers verwendet wird. Der Nutzer entscheidet, welche Daten er eingibt, welche Projekte er speichert und welche Exporte er erstellt oder weitergibt.</p>
+<p>Die App ist ein Software-Werkzeug, das auf Initiative des Nutzers verwendet wird. Der Nutzer entscheidet, welche Daten er eingibt, welche Projekte er speichert und welche Exporte er erstellt oder weitergibt. In der App eingegebene Daten bleiben auf dem Gerät: Der Entwickler erhält und verarbeitet sie nicht.</p>
+<p>Der Entwickler verarbeitet personenbezogene Daten nur, wenn Sie uns kontaktieren (E-Mail oder Formular): Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Beantwortung Ihrer Anfrage) und lit. f (berechtigtes Interesse am Support). Käufe werden von Apple als eigenständigem Verantwortlichen verarbeitet.</p>
 <h2>10. Sicherheit</h2>
 <ul>
 <li>Die Daten werden hauptsächlich lokal auf dem Gerät des Nutzers gespeichert.</li>
@@ -376,19 +402,20 @@
 <li>Löschung</li>
 <li>Einschränkung der Verarbeitung</li>
 <li>Widerspruch</li>
+<li>Datenübertragbarkeit</li>
 <li>zusätzliche Informationen zur Verarbeitung</li>
 </ul>
-<p>Für Anfragen zum Datenschutz nutzen Sie die auf der App-Seite veröffentlichten Kontaktdaten und Support-Links.</p>
+<p>Für Anfragen zum Datenschutz schreiben Sie an support@instalcalc.ro. Sie haben außerdem das Recht, sich bei einer Aufsichtsbehörde zu beschweren (Art. 77 DSGVO): Für den Entwickler zuständig ist Der Hessische Beauftragte für Datenschutz und Informationsfreiheit (Wiesbaden); Sie können sich auch an die Behörde Ihres Wohnsitzes oder Arbeitsortes wenden.</p>
 <h2>12. Übermittlung an Dritte</h2>
 <p>Wir verkaufen keine personenbezogenen Daten und übermitteln keine Nutzerdaten an Dritte zu eigenen kommerziellen Zwecken.</p>
 <p>Für In-App-Käufe können bestimmte technische und kommerzielle Daten von Apple gemäß den Apple-Richtlinien und -Bedingungen verarbeitet werden.</p>
 <p>Für Solarfunktionen, die PVGIS/JRC nutzen, wird die technische Anfrage an die JRC/PVGIS-Infrastruktur übermittelt, um die angeforderten Klimadaten zu erhalten. Diese Daten werden ausschließlich für die vom Nutzer veranlasste Berechnung verwendet und nicht für Werbe-Tracking.</p>
 <p>Wenn der Nutzer sich entscheidet, Dokumente über externe Kanäle zu teilen (WhatsApp, SMS, E-Mail, iOS-Freigabeblatt) oder ein Backup in iCloud Drive zu speichern, werden die Daten über die jeweiligen Dienste auf Initiative des Nutzers übermittelt und unterliegen den Richtlinien dieser Anbieter. Diese Übermittlungen werden nicht automatisch von der App ausgelöst.</p>
-<p>Das Kontaktformular auf der Website (<a href="contact.html">instalcalc.ro/contact</a>) wird über den Dienst FormSubmit (formsubmit.co) übermittelt, der uns die Nachricht per E-Mail an support@instalcalc.ro weiterleitet. Übermittelt werden nur die von Ihnen eingegebenen Daten (Name, E-Mail, Betreff, Gerät, Nachricht), ausschließlich zur Beantwortung Ihrer Anfrage (Art. 6 Abs. 1 lit. b und f DSGVO). Die Nachrichten werden gelöscht, sobald sie für Ihre Anfrage nicht mehr erforderlich sind. Wenn Sie diesen Dienst nicht nutzen möchten, können Sie uns direkt per E-Mail schreiben.</p>
+<p>Das Kontaktformular auf der Website (<a href="contact.html">instalcalc.ro/contact</a>) sendet keine Daten an einen Server: Es stellt nur die Nachricht zusammen und öffnet Ihr E-Mail-Programm, aus dem Sie sie selbst an support@instalcalc.ro senden. Eingehende E-Mails verwenden wir ausschließlich zur Beantwortung Ihrer Anfrage (Art. 6 Abs. 1 lit. b und f DSGVO) und löschen sie, sobald sie dafür nicht mehr erforderlich sind. Das Postfach wird bei Zoho im Rechenzentrum in der Europäischen Union gehostet, auf Grundlage eines Auftragsverarbeitungsvertrags (Art. 28 DSGVO).</p>
 <h2>13. Änderungen</h2>
 <p>Diese Datenschutzerklärung kann regelmäßig aktualisiert werden. Die aktuelle Version muss auch unter der auf der App-Seite und in den offiziellen Support-Materialien angegebenen externen URL veröffentlicht sein.</p>
 <h2>14. Kontakt</h2>
-<p>Für Fragen zum Datenschutz nutzen Sie die auf der App-Seite veröffentlichten Kontaktdaten und Support-Links.</p>
+<p>Florin-Vasile Crăciun, Bahnhofstraße 1, 35649 Bischoffen, Deutschland · support@instalcalc.ro · <a href="contact.html">Kontaktformular</a> · <a href="impressum.html">Impressum</a></p>
 <hr>
 <p><strong>Hinweis:</strong> Die App ist ein technisches Hilfsmittel für Berechnungen, vorläufige Schätzungen und Projektverwaltung. Der Nutzer ist verantwortlich für die von ihm eingegebenen Daten sowie für die Art und Weise, wie er die erzeugten Ergebnisse nutzt oder weitergibt.</p>
 <a class="back-link" href="index.html">← Zurück zur Startseite</a>

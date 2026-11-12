@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact / Kontakt — InstalCalc</title>
-<meta name="description" content="Formular de contact InstalCalc. / InstalCalc contact form. / Kontaktformular von InstalCalc.">
+<meta name="description" content="Contact InstalCalc prin email. / Contact InstalCalc by email. / Kontakt zu InstalCalc per E-Mail.">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon.png">
 <link rel="stylesheet" href="style.css">
@@ -37,25 +37,21 @@
 <div data-lang="ro">
 <h1>Contact</h1>
 <p>Scrie-ne pentru întrebări, probleme tehnice sau sugestii. Răspundem în română sau germană.</p>
-<p class="form-success" id="ok-ro" hidden>✅ Mesajul a fost trimis. Mulțumim! Îți răspundem pe adresa de email indicată.</p>
-<form class="contact-form" action="https://formsubmit.co/support@instalcalc.ro" method="POST">
-    <input type="hidden" name="_subject" value="InstalCalc – mesaj din formularul de contact">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://instalcalc.ro/contact.html?sent=1">
-    <input type="hidden" name="Limba" value="RO">
-    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<form class="contact-form" data-mailto data-subject="InstalCalc – " data-label-name="Nume" data-label-device="Dispozitiv">
     <label>Nume<input type="text" name="name" autocomplete="name" required maxlength="120"></label>
-    <label>Email (pentru răspuns)<input type="email" name="email" autocomplete="email" required maxlength="200"></label>
     <label>Subiect
         <select name="topic">
             <option>Problemă tehnică</option><option>Întrebare</option><option>Sugestie</option><option>Abonament / achiziție</option><option>Altele</option>
         </select>
     </label>
     <label>Versiunea aplicației și dispozitivul (opțional)<input type="text" name="device" maxlength="200" placeholder="ex. 1.0 (8), iPhone 15, iOS 27"></label>
-    <label>Mesaj<textarea name="message" rows="7" required maxlength="5000"></textarea></label>
-    <label class="consent"><input type="checkbox" required> <span>Sunt de acord ca datele introduse să fie folosite pentru a-mi răspunde. Detalii în <a href="privacy.html">Politica de confidențialitate</a>.</span></label>
-    <button type="submit" class="mail-btn">Trimite mesajul</button>
+    <label>Mesaj<textarea name="message" rows="7" required maxlength="1500"></textarea></label>
+    <p class="operator-note" style="margin-left:0">Când apeși „Deschide emailul”, se deschide aplicația ta de email cu mesajul gata completat către support@instalcalc.ro; îl trimiți de acolo. Datele nu trec prin niciun alt serviciu.</p>
+    <button type="submit" class="mail-btn">Deschide emailul</button>
+    <div class="mailto-fallback" hidden>
+        <p class="operator-note" style="margin-left:0">Dacă nu s-a deschis nicio aplicație de email, copiază mesajul și trimite-l la support@instalcalc.ro.</p>
+        <button type="button" class="mail-btn copy-btn" data-copied="Copiat ✓">Copiază mesajul</button>
+    </div>
 </form>
 <p class="operator-note" style="margin-left:0">Poți scrie și direct la <a href="mailto:support@instalcalc.ro">support@instalcalc.ro</a>.</p>
 <hr>
@@ -65,25 +61,21 @@
 <div data-lang="en">
 <h1>Contact</h1>
 <p>Write to us with questions, technical issues or suggestions. We reply in Romanian or German.</p>
-<p class="form-success" id="ok-en" hidden>✅ Your message has been sent. Thank you! We will reply to the email address you provided.</p>
-<form class="contact-form" action="https://formsubmit.co/support@instalcalc.ro" method="POST">
-    <input type="hidden" name="_subject" value="InstalCalc – contact form message">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://instalcalc.ro/contact.html?sent=1">
-    <input type="hidden" name="Limba" value="EN">
-    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<form class="contact-form" data-mailto data-subject="InstalCalc – " data-label-name="Name" data-label-device="Device">
     <label>Name<input type="text" name="name" autocomplete="name" required maxlength="120"></label>
-    <label>Email (for our reply)<input type="email" name="email" autocomplete="email" required maxlength="200"></label>
     <label>Topic
         <select name="topic">
             <option>Technical issue</option><option>Question</option><option>Suggestion</option><option>Subscription / purchase</option><option>Other</option>
         </select>
     </label>
     <label>App version and device (optional)<input type="text" name="device" maxlength="200" placeholder="e.g. 1.0 (8), iPhone 15, iOS 27"></label>
-    <label>Message<textarea name="message" rows="7" required maxlength="5000"></textarea></label>
-    <label class="consent"><input type="checkbox" required> <span>I agree that the data I enter will be used to reply to me. Details in the <a href="privacy.html">Privacy Policy</a>.</span></label>
-    <button type="submit" class="mail-btn">Send message</button>
+    <label>Message<textarea name="message" rows="7" required maxlength="1500"></textarea></label>
+    <p class="operator-note" style="margin-left:0">When you press "Open email", your email app opens with the message ready, addressed to support@instalcalc.ro; you send it from there. The data does not pass through any other service.</p>
+    <button type="submit" class="mail-btn">Open email</button>
+    <div class="mailto-fallback" hidden>
+        <p class="operator-note" style="margin-left:0">If no email app opened, copy the message and send it to support@instalcalc.ro.</p>
+        <button type="button" class="mail-btn copy-btn" data-copied="Copied ✓">Copy message</button>
+    </div>
 </form>
 <p class="operator-note" style="margin-left:0">You can also write directly to <a href="mailto:support@instalcalc.ro">support@instalcalc.ro</a>.</p>
 <hr>
@@ -93,27 +85,23 @@
 <div data-lang="de">
 <h1>Kontakt</h1>
 <p>Schreiben Sie uns bei Fragen, technischen Problemen oder Anregungen. Wir antworten auf Rumänisch oder Deutsch.</p>
-<p class="form-success" id="ok-de" hidden>✅ Ihre Nachricht wurde gesendet. Vielen Dank! Wir antworten an die angegebene E-Mail-Adresse.</p>
-<form class="contact-form" action="https://formsubmit.co/support@instalcalc.ro" method="POST">
-    <input type="hidden" name="_subject" value="InstalCalc – Nachricht über das Kontaktformular">
-    <input type="hidden" name="_template" value="table">
-    <input type="hidden" name="_captcha" value="false">
-    <input type="hidden" name="_next" value="https://instalcalc.ro/contact.html?sent=1">
-    <input type="hidden" name="Limba" value="DE">
-    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+<form class="contact-form" data-mailto data-subject="InstalCalc – " data-label-name="Name" data-label-device="Gerät">
     <label>Name<input type="text" name="name" autocomplete="name" required maxlength="120"></label>
-    <label>E-Mail (für die Antwort)<input type="email" name="email" autocomplete="email" required maxlength="200"></label>
     <label>Betreff
         <select name="topic">
             <option>Technisches Problem</option><option>Frage</option><option>Anregung</option><option>Abo / Kauf</option><option>Sonstiges</option>
         </select>
     </label>
     <label>App-Version und Gerät (optional)<input type="text" name="device" maxlength="200" placeholder="z. B. 1.0 (8), iPhone 15, iOS 27"></label>
-    <label>Nachricht<textarea name="message" rows="7" required maxlength="5000"></textarea></label>
-    <label class="consent"><input type="checkbox" required> <span>Ich bin einverstanden, dass meine Angaben zur Beantwortung meiner Anfrage verwendet werden. Details in der <a href="privacy.html">Datenschutzerklärung</a>.</span></label>
-    <button type="submit" class="mail-btn">Nachricht senden</button>
+    <label>Nachricht<textarea name="message" rows="7" required maxlength="1500"></textarea></label>
+    <p class="operator-note" style="margin-left:0">Wenn Sie auf „E-Mail öffnen“ tippen, öffnet sich Ihr E-Mail-Programm mit der fertigen Nachricht an support@instalcalc.ro; Sie senden sie von dort ab. Die Daten laufen über keinen anderen Dienst.</p>
+    <button type="submit" class="mail-btn">E-Mail öffnen</button>
+    <div class="mailto-fallback" hidden>
+        <p class="operator-note" style="margin-left:0">Falls sich kein E-Mail-Programm geöffnet hat, kopieren Sie die Nachricht und senden Sie sie an support@instalcalc.ro.</p>
+        <button type="button" class="mail-btn copy-btn" data-copied="Kopiert ✓">Nachricht kopieren</button>
+    </div>
 </form>
-<p class="operator-note" style="margin-left:0">Sie können uns auch direkt an <a href="mailto:support@instalcalc.ro">support@instalcalc.ro</a> schreiben.</p>
+<p class="operator-note" style="margin-left:0">Sie können uns auch direkt schreiben an <a href="mailto:support@instalcalc.ro">support@instalcalc.ro</a>.</p>
 <hr>
 <a class="back-link" href="index.html">← Zurück zur Startseite</a>
 </div>
@@ -159,10 +147,32 @@
     if (!saved) { try { saved = localStorage.getItem("instalcalc-lang"); } catch (e) {} }
     if (!saved) { var nav = (navigator.language || "ro").slice(0, 2); saved = ["ro", "en", "de"].indexOf(nav) >= 0 ? nav : "ro"; }
     apply(saved);
-    if (params.get("sent") === "1") {
-        document.querySelectorAll(".form-success").forEach(function (el) { el.hidden = false; });
-        document.querySelectorAll(".contact-form").forEach(function (el) { el.hidden = true; });
+    // Formularul nu trimite nimic pe un server: compune emailul și deschide aplicația
+    // de email a vizitatorului (mailto). Dacă nu există una, mesajul se poate copia.
+    function compose(form) {
+        var f = form.elements;
+        var lines = [f.message.value.trim(), "", "—",
+            form.dataset.labelName + ": " + f.name.value.trim()];
+        if (f.device.value.trim()) { lines.push(form.dataset.labelDevice + ": " + f.device.value.trim()); }
+        return { subject: form.dataset.subject + f.topic.value, body: lines.join("\n") };
     }
+    document.querySelectorAll("form[data-mailto]").forEach(function (form) {
+        form.addEventListener("submit", function (event) {
+            event.preventDefault();
+            var mail = compose(form);
+            location.href = "mailto:support@instalcalc.ro?subject=" + encodeURIComponent(mail.subject) + "&body=" + encodeURIComponent(mail.body);
+            form.querySelector(".mailto-fallback").hidden = false;
+        });
+        var copy = form.querySelector(".copy-btn");
+        copy.addEventListener("click", function () {
+            var mail = compose(form);
+            var text = mail.subject + "\n\n" + mail.body;
+            var done = function () { copy.textContent = copy.dataset.copied; };
+            if (navigator.clipboard) {
+                navigator.clipboard.writeText(text).then(done, function () {});
+            }
+        });
+    });
     buttons.forEach(function (btn) {
         btn.addEventListener("click", function () { apply(btn.getAttribute("data-set-lang")); });
     });
