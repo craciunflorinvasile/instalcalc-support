@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact / Kontakt — InstalCalc</title>
+<meta name="description" content="Formular de contact InstalCalc. / InstalCalc contact form. / Kontaktformular von InstalCalc.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+    <a class="wordmark" href="index.html">InstalCalc</a>
+    <nav>
+        <a href="index.html" data-lang="ro">Acasă</a>
+        <a href="index.html" data-lang="en">Home</a>
+        <a href="index.html" data-lang="de">Start</a>
+        <a href="privacy.html" data-lang="ro">Confidențialitate</a>
+        <a href="privacy.html" data-lang="en">Privacy</a>
+        <a href="privacy.html" data-lang="de">Datenschutz</a>
+        <a href="terms.html" data-lang="ro">Termeni</a>
+        <a href="terms.html" data-lang="en">Terms</a>
+        <a href="terms.html" data-lang="de">AGB</a>
+        <a href="impressum.html" data-lang="ro">Impressum</a>
+        <a href="impressum.html" data-lang="en">Impressum</a>
+        <a href="impressum.html" data-lang="de">Impressum</a>
+        <div class="lang-switch">
+            <button class="lang-toggle" data-set-lang="ro" type="button">RO</button>
+            <button class="lang-toggle" data-set-lang="en" type="button">EN</button>
+            <button class="lang-toggle" data-set-lang="de" type="button">DE</button>
+        </div>
+    </nav>
+</header>
+<main>
+
+<div data-lang="ro">
+<h1>Contact</h1>
+<p>Scrie-ne pentru întrebări, probleme tehnice sau sugestii. Răspundem în română sau germană.</p>
+<p class="form-success" id="ok-ro" hidden>✅ Mesajul a fost trimis. Mulțumim! Îți răspundem pe adresa de email indicată.</p>
+<form class="contact-form" action="https://formsubmit.co/support@instalcalc.ro" method="POST">
+    <input type="hidden" name="_subject" value="InstalCalc – mesaj din formularul de contact">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://instalcalc.ro/contact.html?sent=1">
+    <input type="hidden" name="Limba" value="RO">
+    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <label>Nume<input type="text" name="name" autocomplete="name" required maxlength="120"></label>
+    <label>Email (pentru răspuns)<input type="email" name="email" autocomplete="email" required maxlength="200"></label>
+    <label>Subiect
+        <select name="topic">
+            <option>Problemă tehnică</option><option>Întrebare</option><option>Sugestie</option><option>Abonament / achiziție</option><option>Altele</option>
+        </select>
+    </label>
+    <label>Versiunea aplicației și dispozitivul (opțional)<input type="text" name="device" maxlength="200" placeholder="ex. 1.0 (8), iPhone 15, iOS 27"></label>
+    <label>Mesaj<textarea name="message" rows="7" required maxlength="5000"></textarea></label>
+    <label class="consent"><input type="checkbox" required> <span>Sunt de acord ca datele introduse să fie folosite pentru a-mi răspunde. Detalii în <a href="privacy.html">Politica de confidențialitate</a>.</span></label>
+    <button type="submit" class="mail-btn">Trimite mesajul</button>
+</form>
+<p class="operator-note" style="margin-left:0">Poți scrie și direct la <a href="mailto:support@instalcalc.ro">support@instalcalc.ro</a>.</p>
+<hr>
+<a class="back-link" href="index.html">← Înapoi la pagina principală</a>
+</div>
+
+<div data-lang="en">
+<h1>Contact</h1>
+<p>Write to us with questions, technical issues or suggestions. We reply in Romanian or German.</p>
+<p class="form-success" id="ok-en" hidden>✅ Your message has been sent. Thank you! We will reply to the email address you provided.</p>
+<form class="contact-form" action="https://formsubmit.co/support@instalcalc.ro" method="POST">
+    <input type="hidden" name="_subject" value="InstalCalc – contact form message">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://instalcalc.ro/contact.html?sent=1">
+    <input type="hidden" name="Limba" value="EN">
+    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <label>Name<input type="text" name="name" autocomplete="name" required maxlength="120"></label>
+    <label>Email (for our reply)<input type="email" name="email" autocomplete="email" required maxlength="200"></label>
+    <label>Topic
+        <select name="topic">
+            <option>Technical issue</option><option>Question</option><option>Suggestion</option><option>Subscription / purchase</option><option>Other</option>
+        </select>
+    </label>
+    <label>App version and device (optional)<input type="text" name="device" maxlength="200" placeholder="e.g. 1.0 (8), iPhone 15, iOS 27"></label>
+    <label>Message<textarea name="message" rows="7" required maxlength="5000"></textarea></label>
+    <label class="consent"><input type="checkbox" required> <span>I agree that the data I enter will be used to reply to me. Details in the <a href="privacy.html">Privacy Policy</a>.</span></label>
+    <button type="submit" class="mail-btn">Send message</button>
+</form>
+<p class="operator-note" style="margin-left:0">You can also write directly to <a href="mailto:support@instalcalc.ro">support@instalcalc.ro</a>.</p>
+<hr>
+<a class="back-link" href="index.html">← Back to home page</a>
+</div>
+
+<div data-lang="de">
+<h1>Kontakt</h1>
+<p>Schreiben Sie uns bei Fragen, technischen Problemen oder Anregungen. Wir antworten auf Rumänisch oder Deutsch.</p>
+<p class="form-success" id="ok-de" hidden>✅ Ihre Nachricht wurde gesendet. Vielen Dank! Wir antworten an die angegebene E-Mail-Adresse.</p>
+<form class="contact-form" action="https://formsubmit.co/support@instalcalc.ro" method="POST">
+    <input type="hidden" name="_subject" value="InstalCalc – Nachricht über das Kontaktformular">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://instalcalc.ro/contact.html?sent=1">
+    <input type="hidden" name="Limba" value="DE">
+    <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <label>Name<input type="text" name="name" autocomplete="name" required maxlength="120"></label>
+    <label>E-Mail (für die Antwort)<input type="email" name="email" autocomplete="email" required maxlength="200"></label>
+    <label>Betreff
+        <select name="topic">
+            <option>Technisches Problem</option><option>Frage</option><option>Anregung</option><option>Abo / Kauf</option><option>Sonstiges</option>
+        </select>
+    </label>
+    <label>App-Version und Gerät (optional)<input type="text" name="device" maxlength="200" placeholder="z. B. 1.0 (8), iPhone 15, iOS 27"></label>
+    <label>Nachricht<textarea name="message" rows="7" required maxlength="5000"></textarea></label>
+    <label class="consent"><input type="checkbox" required> <span>Ich bin einverstanden, dass meine Angaben zur Beantwortung meiner Anfrage verwendet werden. Details in der <a href="privacy.html">Datenschutzerklärung</a>.</span></label>
+    <button type="submit" class="mail-btn">Nachricht senden</button>
+</form>
+<p class="operator-note" style="margin-left:0">Sie können uns auch direkt an <a href="mailto:support@instalcalc.ro">support@instalcalc.ro</a> schreiben.</p>
+<hr>
+<a class="back-link" href="index.html">← Zurück zur Startseite</a>
+</div>
+
+</main>
+<footer class="site-footer">
+    <div class="links">
+        <a href="index.html" data-lang="ro">Acasă</a>
+        <a href="index.html" data-lang="en">Home</a>
+        <a href="index.html" data-lang="de">Start</a>
+        <a href="privacy.html" data-lang="ro">Confidențialitate</a>
+        <a href="privacy.html" data-lang="en">Privacy</a>
+        <a href="privacy.html" data-lang="de">Datenschutz</a>
+        <a href="terms.html" data-lang="ro">Termeni</a>
+        <a href="terms.html" data-lang="en">Terms</a>
+        <a href="terms.html" data-lang="de">AGB</a>
+        <a href="impressum.html" data-lang="ro">Impressum</a>
+        <a href="impressum.html" data-lang="en">Impressum</a>
+        <a href="impressum.html" data-lang="de">Impressum</a>
+        <a href="contact.html" data-lang="ro">Contact</a>
+        <a href="contact.html" data-lang="en">Contact</a>
+        <a href="contact.html" data-lang="de">Kontakt</a>
+    </div>
+    <div data-lang="ro">© 2025-2026 InstalCalc. Toate drepturile rezervate.</div>
+    <div data-lang="en">© 2025-2026 InstalCalc. All rights reserved.</div>
+    <div data-lang="de">© 2025-2026 InstalCalc. Alle Rechte vorbehalten.</div>
+</footer>
+<script>
+(function () {
+    var buttons = document.querySelectorAll(".lang-toggle[data-set-lang]");
+    function apply(lang) {
+        document.querySelectorAll("[data-lang]").forEach(function (el) {
+            el.classList.toggle("active", el.getAttribute("data-lang") === lang);
+        });
+        buttons.forEach(function (btn) {
+            btn.classList.toggle("active", btn.getAttribute("data-set-lang") === lang);
+        });
+        document.documentElement.lang = lang;
+        try { localStorage.setItem("instalcalc-lang", lang); } catch (e) {}
+    }
+    var params = new URLSearchParams(location.search);
+    var saved = params.get("lang");
+    if (!saved) { try { saved = localStorage.getItem("instalcalc-lang"); } catch (e) {} }
+    if (!saved) { var nav = (navigator.language || "ro").slice(0, 2); saved = ["ro", "en", "de"].indexOf(nav) >= 0 ? nav : "ro"; }
+    apply(saved);
+    if (params.get("sent") === "1") {
+        document.querySelectorAll(".form-success").forEach(function (el) { el.hidden = false; });
+        document.querySelectorAll(".contact-form").forEach(function (el) { el.hidden = true; });
+    }
+    buttons.forEach(function (btn) {
+        btn.addEventListener("click", function () { apply(btn.getAttribute("data-set-lang")); });
+    });
+})();
+</script>
+</body>
+</html>
